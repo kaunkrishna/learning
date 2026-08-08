@@ -1,4 +1,4 @@
-console.log("hello world")
+console.log("hello world");
 
 // let boxes = document.getElementsByClassName("box")
 // console.log(boxes)
@@ -9,6 +9,14 @@ console.log("hello world")
 
 // document.querySelector(".box").style.backgroundColor = "green";
 
-document.querySelectorAll(".box").forEach(e =>{
-    e.style.backgroundColor = "blue";
-})
+// document.querySelectorAll(".box").forEach((e) => {
+//   e.style.backgroundColor = "blue";
+// });
+
+// let div = document.createElement("div");
+// div.innerHTML = "i have been created by <b>KAUN<b>";
+// div.setAttribute("class", "created");
+// document.querySelector(".container").append(div);
+
+let cont = document.querySelector(".container")
+cont.insertAdjacentHTML("afterend", "<b>Hello I'm under the water plz help me, here to much raining........</b>")
