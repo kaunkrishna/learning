@@ -1,12 +1,26 @@
-console.log("hello world");
+// async function getData() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(455)
+//         }, 3500);
+//     })
+// }
 
-let btn = document.getElementById("btn")
+async function getData() {
+    let x = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    let data = (await x).json()
+    console.log(x)
+    return data
+}
 
-btn.addEventListener("dblclick", ()=>{
-    // document.querySelector(".box").innerHTML = "Hello I am a boxer"
-    alert("hands up! button molestor")
-})
+async function main() {
+    console.log("hello world 1");
+    console.log("hello world 2");
+    console.log("hello world 3");
 
-document.addEventListener("contextmenu", () => {
-    alert("really wanna see the inner me?");
-});
+    let data = await getData()
+
+    console.log("hello world 4");
+}
+
+main()
