@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Site Builder</title>
+
+  <style>
+    .card {
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      margin: 5px;
+      border: 2px solid black;
+      border-radius: 3px;
+      width: 900px;
+    }
+
+    .image {
+      position: relative;
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    .image img {
+      display: block;
+      width: 200px;
+      border-radius: 3px;
+    }
+
+    .image .capsule {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      padding: 3px 6px;
+      background-color: rgb(40, 40, 40);
+      opacity: 90%;
+      color: white;
+      border-radius: 3px;
+      font-size: 14px;
+      z-index: 10;
+    }
+
+    .text {
+      padding-left: 15px;
+    }
+
+    .text h1 {
+      padding: 2px 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container"></div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
